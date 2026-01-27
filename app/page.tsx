@@ -84,7 +84,7 @@ export default function SolutionsAttorney(): JSX.Element {
             </span> */}
 
             {/* Title */}
-            <h2 className="font-serif text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[11rem] leading-[0.85] font-black mb-6 sm:mb-8 md:mb-12 italic text-white">
+            <h2 className="font-serif text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[11rem] leading-[0.85] font-black mt-8 italic text-white">
               Architecting <br />
               <span
                 className="text-outline-dark"
