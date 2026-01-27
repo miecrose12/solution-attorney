@@ -225,7 +225,7 @@ export default function ProcessPage() {
               letterSpacing: 'clamp(0.2em, 0.5em, 0.5em)',
               textTransform: 'uppercase',
               display: 'block',
-              marginBottom: '10px',
+              marginBottom: '60px',
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.3s forwards'
             }}></span>

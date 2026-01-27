@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
     },
     {
       title: 'Global Office',
-      links: ['Lagos HQ', 'London Liaison', 'Durban Bureau'],
+      links: ['Lagos HQ', ],
       hidden: true,
     },
   ];
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="pt-6 border-t border-primary border-opacity-5 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center opacity-0 animate-fade-in-up [animation-delay:0.6s]">
           <p className="text-xs uppercase tracking-widest text-primary text-opacity-30 text-center lg:text-left">
-            © 2024 Solutions Attorney — Radical Precision Architecture
+            © 2026 Solutions Attorney — Radical Precision Architecture
           </p>
           <div className="flex gap-6">
             {['public', 'data_exploration', 'architecture'].map((icon) => (

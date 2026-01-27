@@ -263,7 +263,7 @@ export default function InsightsPage() {
               marginTop: '46px',
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.3s forwards'
-            }}>Knowledge Hub</span>
+            }}></span>
             
             <h1 style={{
               fontFamily: 'var(--font-serif)',

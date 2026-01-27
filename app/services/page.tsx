@@ -15,76 +15,175 @@ export default function ServicesPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setAnimatedCards([0, 1, 2, 3, 4, 5]);
+      setAnimatedCards([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
     }, 100);
     return () => clearTimeout(timer);
   }, []);
 
   const servicesItems: ServiceItem[] = [
     {
+      icon: 'balance',
+      title: 'Civil Rights Litigation',
+      description:
+        'Protecting fundamental rights and freedoms through strategic litigation and advocacy in civil rights matters.',
+      points: [
+        'Constitutional rights defense',
+        'Discrimination cases',
+        'Civil liberties protection',
+      ],
+    },
+    {
       icon: 'corporate_fare',
-      title: 'Corporate Structuring',
+      title: 'Corporate Litigation',
       description:
-        'Design optimal corporate architectures for holding companies, subsidiaries, and complex enterprise ecosystems.',
+        'Representing businesses in complex commercial disputes, shareholder conflicts, and corporate governance matters.',
       points: [
-        'Entity formation & registration',
-        'Governance frameworks',
-        'Cross-border structuring',
-      ],
-    },
-    {
-      icon: 'account_balance_wallet',
-      title: 'Wealth Management',
-      description:
-        'Strategic preservation and growth planning for sophisticated clients with multi-jurisdictional assets.',
-      points: [
-        'Estate planning',
-        'Trust structures',
-        'Asset protection strategies',
-      ],
-    },
-    {
-      icon: 'real_estate_agent',
-      title: 'Real Estate & Development',
-      description:
-        'Navigate Lagos\'s evolving landscape with expert guidance on acquisitions, financing, and development.',
-      points: [
-        'Land acquisition & title',
-        'Development agreements',
-        'Financing structures',
-      ],
-    },
-    {
-      icon: 'handshake',
-      title: 'Commercial Transactions',
-      description:
-        'Facilitate high-value commercial dealings with precision, transparency, and legal rigor.',
-      points: [
-        'M&A advisory',
-        'Joint venture agreements',
-        'Commercial contracts',
+        'Shareholder disputes',
+        'Business tort litigation',
+        'Corporate governance conflicts',
       ],
     },
     {
       icon: 'gavel',
-      title: 'Regulatory Compliance',
+      title: 'Criminal Defense Litigation',
       description:
-        'Navigate complex regulatory environments with strategies tailored to your industry and jurisdiction.',
+        'Vigorous defense representation for individuals and corporations facing criminal charges at all levels.',
       points: [
-        'Regulatory filings',
-        'Compliance audits',
-        'Policy implementation',
+        'White-collar crime defense',
+        'Criminal trial representation',
+        'Appeals & post-conviction relief',
       ],
     },
     {
-      icon: 'trending_up',
-      title: 'Investment Advisory',
+      icon: 'account_balance_wallet',
+      title: 'Debt Settlement',
       description:
-        'Strategic counsel for investors seeking exposure to African markets with risk mitigation.',
+        'Strategic negotiation and resolution of debt obligations to achieve favorable outcomes for creditors and debtors.',
       points: [
-        'Investment structure',
-        'Due diligence',
-        'Portfolio optimization',
+        'Debt restructuring',
+        'Creditor negotiations',
+        'Settlement agreements',
+      ],
+    },
+    {
+      icon: 'account_balance',
+      title: 'Government Litigation',
+      description:
+        'Navigating complex litigation involving government entities, regulatory matters, and public law disputes.',
+      points: [
+        'Administrative law disputes',
+        'Regulatory litigation',
+        'Judicial review proceedings',
+      ],
+    },
+    {
+      icon: 'lightbulb',
+      title: 'Intellectual Property Litigation',
+      description:
+        'Protecting and enforcing intellectual property rights through comprehensive litigation strategies.',
+      points: [
+        'Patent infringement cases',
+        'Trademark & copyright disputes',
+        'IP licensing conflicts',
+      ],
+    },
+    {
+      icon: 'home',
+      title: 'Landlord & Tenant Litigation',
+      description:
+        'Resolving disputes between property owners and tenants through effective legal representation.',
+      points: [
+        'Eviction proceedings',
+        'Lease dispute resolution',
+        'Rental agreement enforcement',
+      ],
+    },
+    {
+      icon: 'business_center',
+      title: 'Legal Consulting',
+      description:
+        'Expert advisory services providing strategic legal guidance across diverse practice areas and industries.',
+      points: [
+        'Legal risk assessment',
+        'Compliance consulting',
+        'Strategic legal planning',
+      ],
+    },
+    {
+      icon: 'description',
+      title: 'Power of Attorney',
+      description:
+        'Drafting and executing power of attorney documents to ensure your interests are protected and represented.',
+      points: [
+        'General power of attorney',
+        'Healthcare directives',
+        'Financial authorization',
+      ],
+    },
+    {
+      icon: 'family_restroom',
+      title: 'Probate Litigation',
+      description:
+        'Resolving estate and inheritance disputes through skilled representation in probate court proceedings.',
+      points: [
+        'Will contests',
+        'Estate administration disputes',
+        'Inheritance claims',
+      ],
+    },
+    {
+      icon: 'report_problem',
+      title: 'Property Damage Litigation',
+      description:
+        'Pursuing compensation for property damage through comprehensive litigation and insurance claim advocacy.',
+      points: [
+        'Insurance claim disputes',
+        'Negligence claims',
+        'Property damage recovery',
+      ],
+    },
+    {
+      icon: 'storefront',
+      title: 'Small Business Litigation',
+      description:
+        'Defending and advancing the interests of small businesses in commercial disputes and regulatory matters.',
+      points: [
+        'Contract disputes',
+        'Partnership conflicts',
+        'Business torts',
+      ],
+    },
+    {
+      icon: 'policy',
+      title: 'Trust & Estates Litigation',
+      description:
+        'Expert representation in complex trust and estate disputes, protecting beneficiary rights and fiduciary duties.',
+      points: [
+        'Trust disputes',
+        'Fiduciary litigation',
+        'Beneficiary rights',
+      ],
+    },
+    {
+      icon: 'edit_document',
+      title: 'Will Writing',
+      description:
+        'Comprehensive estate planning through professionally drafted wills that reflect your wishes and protect your legacy.',
+      points: [
+        'Last will & testament',
+        'Estate distribution planning',
+        'Testamentary documents',
+      ],
+    },
+    {
+      icon: 'real_estate_agent',
+      title: 'Real Estate & Property Conveyancing',
+      description:
+        'Facilitating seamless property transactions with expert conveyancing services and title examination.',
+      points: [
+        'Property title verification',
+        'Transaction documentation',
+        'Transfer of ownership',
       ],
     },
   ];
@@ -247,7 +346,7 @@ export default function ServicesPage() {
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
                 style={{
-                  transitionDelay: `${index * 0.1}s`
+                  transitionDelay: `${index * 0.05}s`
                 }}
               >
                 {/* Accent Bar */}
@@ -287,14 +386,6 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-
-                {/* Hover Indicator */}
-                <div className="service-learn-more">
-                  <span className="service-learn-more-text">Learn More</span>
-                  <span className="material-symbols-outlined service-learn-more-icon">
-                    arrow_forward
-                  </span>
-                </div>
               </div>
             ))}
           </div>
@@ -320,21 +411,25 @@ export default function ServicesPage() {
             </p>
 
             {/* CTA Button */}
-            <button 
-              className="cta-button"
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'var(--color-primary-dark)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(26, 48, 94, 0.3)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'var(--color-primary)';
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
-              <span style={{ position: 'relative', zIndex: 2 }}>Start Your Consultation</span>
-            </button>
+           <a href="/contact">
+  <button
+    className="cta-button"
+    onMouseEnter={(e) => {
+      e.currentTarget.style.background = 'var(--color-primary-dark)';
+      e.currentTarget.style.transform = 'translateY(-4px)';
+      e.currentTarget.style.boxShadow = '0 12px 40px rgba(26, 48, 94, 0.3)';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.background = 'var(--color-primary)';
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = 'none';
+    }}
+  >
+    <span style={{ position: 'relative', zIndex: 2 }}>
+      Start Your Consultation
+    </span>
+  </button>
+</a>
 
             {/* Trust Badge */}
             <div className="cta-trust-badge">
@@ -642,34 +737,6 @@ export default function ServicesPage() {
           color: var(--color-accent-gold);
           font-weight: var(--fw-black);
           font-size: clamp(0.875rem, 2vw, 1rem);
-        }
-
-        .service-learn-more {
-          margin-top: var(--spacing-lg);
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          opacity: 0;
-          transform: translateY(10px);
-          transition: all 0.3s ease-out;
-        }
-
-        .service-card.hovered .service-learn-more {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        .service-learn-more-text {
-          font-size: clamp(0.625rem, 1.5vw, 0.7rem);
-          font-weight: var(--fw-black);
-          letter-spacing: 0.3em;
-          text-transform: uppercase;
-          color: var(--color-accent-gold);
-        }
-
-        .service-learn-more-icon {
-          font-size: clamp(0.875rem, 2vw, 1rem) !important;
-          color: var(--color-accent-gold);
         }
 
         /* ===========================
@@ -1042,10 +1109,6 @@ export default function ServicesPage() {
           .service-point {
             font-size: 0.8125rem;
             padding-left: 1.25rem;
-          }
-
-          .service-learn-more {
-            margin-top: var(--spacing-md);
           }
 
           .cta-section {

@@ -62,18 +62,18 @@ export const Contact: React.FC = () => {
             {[
               {
                 icon: 'alternate_email',
-                label: 'Electronic Mail',
-                value: 'info@solutionsattorney.com.ng',
+                label: 'E-Mail',
+                value: 'olowo_tayo@nigerianbar.ng',
               },
               { 
                 icon: 'ring_volume', 
-                label: 'Primary Line', 
-                value: '+234 (0) 800 SOLUTIONS' 
+                label: 'Phone Number', 
+                value: '+2348089524049' 
               },
               { 
                 icon: 'near_me', 
                 label: 'Global HQ', 
-                value: '123 Ikeja Office Plaza, Lagos' 
+                value: 'no,76b Adeniyi jones avenue, ikeja, lagos state, nigeria' 
               },
             ].map((item, index) => (
               <div
@@ -88,7 +88,7 @@ export const Contact: React.FC = () => {
                 
                 {/* Contact Details */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-accent-gold text-opacity-60 text-xs font-black tracking-widest uppercase mb-1">
+                  <p className="text-white text-opacity-60 text-xs font-black tracking-widest uppercase mb-1">
                     {item.label}
                   </p>
                   <p className="text-white text-base md:text-lg font-normal break-words">{item.value}</p>

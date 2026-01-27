@@ -75,16 +75,27 @@ export default function SolutionsAttorney(): JSX.Element {
         {/* Decorative Skewed Background */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 -skew-x-12 translate-x-1/2 z-10"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full 
- ">
-          <div className="max-w-6xl mb-32 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
+          <div className="max-w-6xl mb-32">
             {/* Badge */}
             {/* <span className="inline-block text-[#f2f2f1] text-xs sm:text-sm md:text-xs font-black tracking-[0.3em] sm:tracking-[0.4em] md:tracking-[0.5em] uppercase mb-5 sm:mb-6 md:mb-8">
               Established in Lagos
             </span> */}
 
             {/* Title */}
-            <h2 className="font-serif text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[11rem] leading-[0.85] font-black mt-8 italic text-white">
+            {/* 
+              DETAILED CHANGES FOR TITLE SIZE:
+              1. Mobile (default): text-6xl (3.75rem / 60px)
+              2. Small mobile (sm): text-6xl (same)
+              3. Medium/Tablet (md): text-7xl (4.5rem / 72px) - slight increase for tablets
+              4. Large/Laptop (lg): text-[8rem] (8rem / 128px) - LOCKED LARGE SIZE
+              5. Extra Large (xl): text-[8rem] (same as lg) - CONSISTENT
+              6. 2XL (2xl): text-[8rem] (same as lg) - CONSISTENT
+              
+              Result: On all laptop screens (1024px+), the title stays large at 128px
+              This is bigger than text-8xl (96px) but smaller than the previous 11rem (176px)
+            */}
+            <h2 className="font-serif text-6xl sm:text-6xl md:text-7xl lg:text-[8rem] xl:text-[8rem] 2xl:text-[8rem] leading-[0.85] font-black mt-8 italic text-white">
               Architecting <br />
               <span
                 className="text-outline-dark"
@@ -101,12 +112,27 @@ export default function SolutionsAttorney(): JSX.Element {
             </span> */}
 
             {/* Content Row */}
-            <div className="flex flex-col md:flex-row items-start md:items-end gap-6 sm:gap-8 md:gap-12 mt-10 sm:mt-12 md:mt-16">
+            {/* 
+              DETAILED CHANGES:
+              1. Kept flex-col at ALL screen sizes (removed lg:flex-row)
+              2. Button now ALWAYS appears below the description text
+              3. On large screens (lg+), increased top margin significantly (mt-24 xl:mt-32)
+              4. This pushes the entire content block (description + button) much further down the page
+              5. Added larger gap between description and button on big screens (gap-8 lg:gap-10)
+            */}
+            <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 mt-10 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-16">
               <p className="text-white/80 text-base sm:text-lg md:text-lg lg:text-xl font-light tracking-wide leading-relaxed max-w-lg border-l-2 border-[#5F5323] pl-5 sm:pl-6 md:pl-8">
                 Precision-engineered legal strategies for the visionaries redefining the West African commercial landscape.
               </p>
               
-
+              {/* 
+                BUTTON POSITIONING DETAILS:
+                - The button appears DIRECTLY BELOW the description text at all screen sizes
+                - Removed side-by-side layout completely
+                - On large screens, the increased top margin (mt-24 xl:mt-32) on the parent div
+                  pushes both the description and button much lower on the page
+                - This creates a vertical stack that sits lower in the hero section on big screens
+              */}
               <a
                 href="/contact"
                 className="group relative px-8 sm:px-10 md:px-10 lg:px-12 py-4 sm:py-5 md:py-5 lg:py-6 overflow-hidden hover:scale-105 transition-transform duration-300 flex-shrink-0"
@@ -126,7 +152,7 @@ export default function SolutionsAttorney(): JSX.Element {
             className="text-white/30 text-[8px] md:text-[9px] uppercase tracking-[0.4em] md:tracking-[0.5em]"
             style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
           >
-            Scroll to Explore
+            
           </span>
           <div className="h-12 md:h-16 w-px bg-white/20 relative">
             <div className="absolute top-0 left-0 w-full h-1/2 bg-[#5F5323]"></div>
@@ -245,7 +271,7 @@ export default function SolutionsAttorney(): JSX.Element {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 border-y border-[#1A305E]/5 py-10 sm:py-12 md:py-16 lg:py-24">
             <div className="w-full md:w-1/2">
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1A305E] font-black italic mb-4 sm:mb-6 md:mb-8 leading-tight">
-                Ready to <br /> restructure?
+                Want to <br /> Know more?
               </h2>
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-start">
@@ -253,10 +279,10 @@ export default function SolutionsAttorney(): JSX.Element {
                 Our collective of legal architects is ready to design your next commercial milestone with surgical precision.
               </p>
               <a
-                href="/contact"
+                href="/services"
                 className="text-[8px] sm:text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em] sm:tracking-[0.5em] flex items-center gap-2 sm:gap-3 md:gap-4 text-[#1A305E] hover:text-[#5F5323] transition-colors"
               >
-                Inquire Privately
+                Check here
                 <span className="material-symbols-outlined text-sm sm:text-base md:text-lg">east</span>
               </a>
             </div>
