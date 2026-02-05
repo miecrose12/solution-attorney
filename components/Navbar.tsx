@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -43,10 +45,29 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="no-underline flex items-center group">
-              <h1 className="text-1xl sm:text-3xl font-black tracking-tighter uppercase  text-[#1A305E] group-hover:text-[#5F5323] transition-colors duration-300">
-                Solutions Attorney<span className="text-[#5F5323]"></span>
-              </h1>
+            <Link href="/" className="flex items-center group relative">
+              {!imageError ? (
+                <Image
+                  src="/solu.png"
+                  alt="Solutions Attorney Logo"
+                  width={140}
+                  height={48}
+                  priority
+                  unoptimized // Add this to bypass Next.js image optimization temporarily
+                  className="object-contain transition-all duration-300 group-hover:opacity-90 group-hover:scale-105"
+                  onError={() => {
+                    console.error('Image failed to load: /solution.png');
+                    setImageError(true);
+                  }}
+                />
+              ) : (
+                // Fallback to text logo if image fails
+                <div className="flex items-center">
+                  <span className="text-xl md:text-2xl font-serif font-bold text-[#1A305E] italic">
+                    Solutions Attorney
+                  </span>
+                </div>
+              )}
             </Link>
 
             {/* Desktop Navigation */}
