@@ -87,7 +87,7 @@ export default function SolutionsAttorney(): JSX.Element {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: 'Adaeze Okonkwo',
+      name: 'Mr.Tayo Olowookere',
       role: 'The principal partner',
       specialty: 'Corporate Governance',
       yearsExp: '**yrs',
