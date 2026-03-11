@@ -2,8 +2,8 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',          // ← corrected: no src/
-    './components/**/*.{js,ts,jsx,tsx,mdx}',   // ← corrected: no src/
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -11,13 +11,16 @@ const config: Config = {
         primary: '#1a305e',
         'primary-dark': '#0b162e',
         'accent-gold': '#5f5323',
+        'accent-gold-light': '#BFA84E',
         white: '#ffffff',
         black: '#000000',
         'accent-light': '#f5f1e8',
       },
       fontFamily: {
-        sans: "'Public Sans', sans-serif",
-        serif: "'Playfair Display', serif",
+        // ✦ Cormorant Garamond replaces Playfair Display
+        serif: ["'Cormorant Garamond'", 'Georgia', 'serif'],
+        // ✦ DM Sans replaces Public Sans
+        sans: ["'DM Sans'", 'system-ui', 'sans-serif'],
       },
       fontWeight: {
         light: '300',
