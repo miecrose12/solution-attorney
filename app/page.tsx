@@ -360,8 +360,7 @@ export default function SolutionsAttorney(): JSX.Element {
                       className="px-4 py-3 rounded-sm"
                       style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
                     >
-                      <span className="text-white/40 text-[8px] uppercase tracking-[0.35em] block mb-1">Specialty</span>
-                      <p className="text-white font-medium text-xs sm:text-sm">{teamMembers[0].specialty}</p>
+                      
                     </div>
                     <a
                       href="/contact"
@@ -487,9 +486,7 @@ export default function SolutionsAttorney(): JSX.Element {
                       style={{ width: activeTeamMember === member.id ? '100%' : '2rem' }}
                     ></div>
 
-                    <span className="text-white/45 text-[9px] uppercase tracking-[0.3em]">
-                      {member.specialty}
-                    </span>
+                  
 
                     <div
                       className="overflow-hidden transition-all duration-500"
