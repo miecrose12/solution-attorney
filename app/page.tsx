@@ -123,7 +123,7 @@ export default function SolutionsAttorney(): JSX.Element {
     },
     {
       id: 5,
-      name: 'Oyenowo David',
+      name: 'Oyeniyi David',
       role: 'IT Support',
       specialty: 'Private Wealth',
       yearsExp: '**yrs',
