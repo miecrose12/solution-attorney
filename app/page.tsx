@@ -9,6 +9,7 @@ import counselImg from './assets/counsel.jpeg';
 import itImg from './assets/it2.png';
 import litigationImg from './assets/li.png';
 import building from './assets/build.png';
+import hamidatImg from './assets/picy.jpeg';
 
 interface ExpertiseCard {
   id: number;
@@ -27,6 +28,7 @@ interface TeamMember {
   yearsExp: string;
   imageUrl: StaticImageData;
   accentColor: string;
+  profilePath: string;
 }
 
 export default function SolutionsAttorney(): JSX.Element {
@@ -63,7 +65,7 @@ export default function SolutionsAttorney(): JSX.Element {
       icon: 'account_balance',
       number: '01',
       label: 'Legal Design',
-      title: 'Corporate Architecture',
+      title: 'Corporate constitutionalization',
       description: 'Structural governance and elite-tier advisory for Pan-African enterprise ecosystems.',
     },
     {
@@ -90,9 +92,10 @@ export default function SolutionsAttorney(): JSX.Element {
       name: 'Mr.Tayo Olowookere',
       role: 'The principal partner',
       specialty: 'Corporate Governance',
-      yearsExp: '**yrs',
+      yearsExp: '18yrs',
       imageUrl: principalImg,
       accentColor: '#5F5323',
+      profilePath: '/tayo',
     },
     {
       id: 2,
@@ -102,6 +105,7 @@ export default function SolutionsAttorney(): JSX.Element {
       yearsExp: '**yrs',
       imageUrl: associateImg,
       accentColor: '#1A305E',
+      profilePath: '/ehi',
     },
     {
       id: 3,
@@ -111,6 +115,7 @@ export default function SolutionsAttorney(): JSX.Element {
       yearsExp: '**yrs',
       imageUrl: counselImg,
       accentColor: '#5F5323',
+      profilePath: '/ruth',
     },
     {
       id: 4,
@@ -120,6 +125,7 @@ export default function SolutionsAttorney(): JSX.Element {
       yearsExp: '**yrs',
       imageUrl: litigationImg,
       accentColor: '#5F5323',
+      profilePath: '/veronica',
     },
     {
       id: 5,
@@ -129,6 +135,17 @@ export default function SolutionsAttorney(): JSX.Element {
       yearsExp: '**yrs',
       imageUrl: itImg,
       accentColor: '#1A305E',
+      profilePath: '/oyeniyi',
+    },
+    {
+      id: 6,
+      name: 'Hamidat Suleiman Sarumi',
+      role: 'Junior Associate',
+      specialty: 'Common and Islamic Law',
+      yearsExp: '1yr',
+      imageUrl: hamidatImg,
+      accentColor: '#5F5323',
+      profilePath: '/hamidat',
     },
   ];
 
@@ -138,7 +155,6 @@ export default function SolutionsAttorney(): JSX.Element {
       {/* ========== HERO SECTION ========== */}
       <section className="relative min-h-[600px] sm:min-h-[600px] md:min-h-[600px] lg:min-h-screen flex items-center pt-16 sm:pt-20 md:pt-16 lg:pt-20 overflow-hidden">
 
-        {/* Hero background using Next.js Image — same pattern as team member images */}
         <div className="absolute inset-0 z-0">
           <Image
             src={building}
@@ -156,7 +172,7 @@ export default function SolutionsAttorney(): JSX.Element {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
           <div className="max-w-6xl mb-32">
             <h2 className="font-serif text-6xl sm:text-6xl md:text-7xl lg:text-[8rem] xl:text-[8rem] 2xl:text-[8rem] leading-[0.85] font-black mt-8 text-white italic">
-              Architecting <br />
+              Constiutional <br />
               <span
                 className="text-outline-dark"
                 style={{
@@ -200,7 +216,6 @@ export default function SolutionsAttorney(): JSX.Element {
           background: 'linear-gradient(135deg, #F8F6F0 0%, #FFFEF9 40%, #F0F4FB 100%)',
         }}
       >
-        {/* Decorative background geometry */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute -top-24 -right-24 w-96 h-96 opacity-[0.06]"
@@ -235,7 +250,6 @@ export default function SolutionsAttorney(): JSX.Element {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-          {/* ---- Section Header ---- */}
           <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-28">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
               <div>
@@ -259,18 +273,18 @@ export default function SolutionsAttorney(): JSX.Element {
               </div>
               <div className="lg:max-w-xs">
                 <p className="text-[#1A305E]/55 font-light text-sm sm:text-base md:text-lg leading-relaxed border-l-2 border-[#5F5323]/40 pl-4">
-                  Five seasoned minds united by one mandate — to construct advantage for our clients at every tier of the commercial landscape.
+                  Six seasoned minds united by one mandate — to construct advantage for our clients at every tier of the commercial landscape.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* ---- Team Hierarchy ---- */}
           <div className="flex flex-col gap-6 sm:gap-8">
 
-            {/* ── ROW 1: LEADER — split layout ── */}
-            <div
-              className={`group w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ${
+            {/* ==================== BIG LEADER CARD (NOW FULLY CLICKABLE) ==================== */}
+            <a
+              href="/tayo"
+              className={`group w-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 block ${
                 teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
               }`}
               style={{
@@ -291,7 +305,7 @@ export default function SolutionsAttorney(): JSX.Element {
 
               <div className="flex flex-col lg:flex-row">
 
-                {/* ── LEFT: Text content panel ── */}
+                {/* LEFT: Text content panel */}
                 <div className="relative flex flex-col justify-between p-8 sm:p-10 lg:p-14 lg:w-[55%] xl:w-[52%] flex-shrink-0">
 
                   <div
@@ -356,18 +370,11 @@ export default function SolutionsAttorney(): JSX.Element {
                       </span>
                       <p className="text-white/30 text-[8px] uppercase tracking-[0.3em] mt-0.5">Experience</p>
                     </div>
-                    <div
-                      className="px-4 py-3 rounded-sm"
-                      style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
-                    >
-                      
-                    </div>
-                    <a
-                      href="/contact"
-                      className="ml-auto flex items-center gap-3 group/btn"
-                    >
+
+                    {/* Connect button is now just visual (whole card is the link) */}
+                    <div className="ml-auto flex items-center gap-3 group/btn">
                       <span className="text-[8px] sm:text-[9px] font-black uppercase tracking-[0.4em] text-white/40 group-hover/btn:text-[#BFA84E] transition-colors">
-                        Connect
+                        See more
                       </span>
                       <div
                         className="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 group-hover/btn:bg-[#5F5323]"
@@ -375,18 +382,16 @@ export default function SolutionsAttorney(): JSX.Element {
                       >
                         <span className="material-symbols-outlined text-white text-sm">east</span>
                       </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
 
-                {/* ── RIGHT: Full photo using Next.js Image ── */}
+                {/* RIGHT: Full photo */}
                 <div className="relative lg:flex-1 overflow-hidden" style={{ minHeight: '360px' }}>
-                  {/* Fade from left */}
                   <div
                     className="absolute inset-y-0 left-0 w-24 z-10 pointer-events-none"
                     style={{ background: 'linear-gradient(90deg, #0F1F45, transparent)' }}
                   ></div>
-                  {/* Fade bottom on mobile */}
                   <div
                     className="absolute inset-x-0 bottom-0 h-24 z-10 pointer-events-none lg:hidden"
                     style={{ background: 'linear-gradient(to top, #0B162E, transparent)' }}
@@ -401,9 +406,9 @@ export default function SolutionsAttorney(): JSX.Element {
                 </div>
 
               </div>
-            </div>
+            </a>
 
-            {/* ── Connector visual ── */}
+            {/* Connector visual */}
             <div className="relative flex-col items-center py-2 hidden sm:flex">
               <div className="flex items-center gap-4 w-full justify-center">
                 <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(95,83,35,0.3))' }}></div>
@@ -416,12 +421,13 @@ export default function SolutionsAttorney(): JSX.Element {
               </div>
             </div>
 
-            {/* ── ROW 2: 4 team members grid ── */}
+            {/* SMALL CARDS GRID (unchanged — already fully clickable) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
               {teamMembers.slice(1).map((member, index) => (
-                <div
+                <a
                   key={member.id}
-                  className={`group relative rounded-xl overflow-hidden cursor-pointer transition-all duration-700 ${
+                  href={member.profilePath}
+                  className={`group relative rounded-xl overflow-hidden cursor-pointer transition-all duration-700 block ${
                     teamVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
                   }`}
                   style={{
@@ -435,7 +441,6 @@ export default function SolutionsAttorney(): JSX.Element {
                   onMouseEnter={() => setActiveTeamMember(member.id)}
                   onMouseLeave={() => setActiveTeamMember(null)}
                 >
-                  {/* Next.js Image — fill the card */}
                   <Image
                     src={member.imageUrl}
                     alt={member.name}
@@ -444,7 +449,6 @@ export default function SolutionsAttorney(): JSX.Element {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 
-                  {/* Gradient overlay */}
                   <div
                     className="absolute inset-0 transition-opacity duration-500 z-10"
                     style={{
@@ -454,7 +458,6 @@ export default function SolutionsAttorney(): JSX.Element {
                     }}
                   ></div>
 
-                  {/* Top accent */}
                   <div
                     className="absolute top-0 left-0 right-0 h-0.5 z-20"
                     style={{
@@ -464,7 +467,6 @@ export default function SolutionsAttorney(): JSX.Element {
                     }}
                   ></div>
 
-                  {/* Member number watermark */}
                   <div
                     className="absolute top-4 right-4 font-serif font-black select-none z-20"
                     style={{ fontSize: '5rem', lineHeight: 1, color: 'rgba(255,255,255,0.06)' }}
@@ -472,7 +474,6 @@ export default function SolutionsAttorney(): JSX.Element {
                     0{member.id}
                   </div>
 
-                  {/* Bottom content */}
                   <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 z-20">
                     <span className="text-[#BFA84E] text-[8px] sm:text-[9px] font-black uppercase tracking-[0.4em] block mb-1.5">
                       {member.role}
@@ -486,22 +487,14 @@ export default function SolutionsAttorney(): JSX.Element {
                       style={{ width: activeTeamMember === member.id ? '100%' : '2rem' }}
                     ></div>
 
-                  
-
-                    <div
-                      className="overflow-hidden transition-all duration-500"
-                      style={{
-                        maxHeight: activeTeamMember === member.id ? '70px' : '0px',
-                        opacity: activeTeamMember === member.id ? 1 : 0,
-                      }}
-                    >
-                      <div className="flex items-center justify-between mt-4 pt-3 border-t border-white/10">
-                        <span className="text-white/35 text-[8px] uppercase tracking-[0.3em]">Experience</span>
-                        <span className="text-[#BFA84E] font-black text-sm">{member.yearsExp}</span>
-                      </div>
+                    <div className="flex items-center justify-end mt-3 pt-2 border-t border-white/10">
+                      <span className="text-[#BFA84E] font-black text-sm flex items-center gap-1.5 tracking-widest">
+                        SEE MORE
+                        <span className="material-symbols-outlined text-base leading-none">east</span>
+                      </span>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -590,7 +583,7 @@ export default function SolutionsAttorney(): JSX.Element {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white font-black mb-6 sm:mb-8 md:mb-12 leading-tight px-2 italic">
-            In the architecture of law, <br />
+            In the constitution of law, <br />
             <span className="text-[#5F5323]">clarity</span> is the cornerstone.
           </h2>
           <div className="w-12 sm:w-16 md:w-20 h-px bg-[#5F5323] mx-auto mb-6 sm:mb-8 md:mb-12"></div>
@@ -611,7 +604,7 @@ export default function SolutionsAttorney(): JSX.Element {
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-start">
               <p className="text-[#1A305E]/60 text-sm sm:text-base md:text-lg lg:text-xl font-light mb-6 sm:mb-8 md:mb-12 leading-relaxed">
-                Our collective of legal architects is ready to design your next commercial milestone with surgical precision.
+                Our collective of legal solutionists is ready to design your next commercial milestone with surgical precision.
               </p>
               <a
                 href="/services"

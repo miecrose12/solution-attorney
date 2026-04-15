@@ -29,9 +29,9 @@ export default function ProcessPage() {
     },
     {
       number: '02',
-      title: 'Architecture & Design',
+      title: 'Design',
       description:
-        'Our architects design tailored solutions with precision, considering all legal and commercial implications.',
+        'Our Sulution design tailored solutions with precision, considering all legal and commercial implications.',
       icon: 'architecture',
     },
     {

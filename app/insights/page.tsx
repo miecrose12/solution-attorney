@@ -605,7 +605,7 @@ export default function InsightsPage() {
                 lineHeight: '1.8',
                 textAlign: 'center'
               }}>
-                Get insights directly to your inbox. Curated legal strategies and market analysis from our architects.
+                Get insights directly to your inbox. Curated legal strategies and market analysis from our Solutionists.
               </p>
 
               <div style={{

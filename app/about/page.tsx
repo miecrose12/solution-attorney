@@ -16,7 +16,7 @@ export default function About(): JSX.Element {
       year: '2018',
       title: 'Foundation & Vision',
       description:
-        'Solutions was established with a singular vision: to architect precision-engineered legal solutions for Africa\'s most ambitious enterprises.',
+        'Solutions was established with a singular vision: to be design precision-engineered legal solutions for Africa\'s most ambitious enterprises.',
     },
     {
       year: '2020',
@@ -28,7 +28,7 @@ export default function About(): JSX.Element {
       year: '2022',
       title: 'Global Recognition',
       description:
-        'Recognized as leading legal architects in corporate structuring and wealth preservation, with offices in London and Durban.',
+        'Recognized as leading legal Solutionists in corporate structuring and wealth preservation, with offices in London and Durban.',
     },
     {
       year: '2024',
@@ -147,7 +147,7 @@ export default function About(): JSX.Element {
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.4s forwards'
             }}>
-              Architects of <br /> <span style={{ color: 'var(--color-accent-gold)' }}>Legal Excellence</span>
+              constitutes of <br /> <span style={{ color: 'var(--color-accent-gold)' }}>Legal Excellence</span>
             </h1>
             
             <p className="hero__description hero__description--about" style={{
@@ -452,7 +452,7 @@ export default function About(): JSX.Element {
               animation: 'fadeInUp 0.8s ease-out 0.2s forwards'
             }}>
               "We don't build walls—<br />
-              <span style={{ color: 'var(--color-accent-gold)' }}>we architect bridges</span> between vision and reality."
+              <span style={{ color: 'var(--color-accent-gold)' }}>we scale bridges</span> between vision and reality."
             </h2>
             <div className="manifesto__divider" style={{
               width: '5rem',
