@@ -92,7 +92,7 @@ export default function SolutionsAttorney(): JSX.Element {
       name: 'Mr.Tayo Olowookere',
       role: 'The principal partner',
       specialty: 'Corporate Governance',
-      yearsExp: '18yrs',
+      yearsExp: '15yrs',
       imageUrl: principalImg,
       accentColor: '#5F5323',
       profilePath: '/tayo',

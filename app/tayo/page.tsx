@@ -42,7 +42,7 @@ export default function TayoProfile(): JSX.Element {
             </div>
             
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[5.5rem] font-medium leading-[1.05] text-slate-900 tracking-tight">
-              Temitayo <br /> Olowookere
+              Barrister <br /> Temitayo
             </h1>
             
             <p className="text-lg md:text-xl font-light leading-relaxed text-slate-600 max-w-lg">
