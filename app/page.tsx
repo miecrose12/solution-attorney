@@ -7,9 +7,9 @@ import principalImg from './assets/principal.jpeg';
 import associateImg from './assets/associate.jpeg';
 import counselImg from './assets/counsel.jpeg';
 import itImg from './assets/it2.png';
-import litigationImg from './assets/li.png';
+import litigationImg from './assets/litigation officer4.jpg';
 import building from './assets/build.png';
-import hamidatImg from './assets/picy.jpeg';
+import hamidatImg from './assets/associate1.jpeg';
 
 interface ExpertiseCard {
   id: number;
