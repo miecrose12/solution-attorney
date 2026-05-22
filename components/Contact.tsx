@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
               { 
                 icon: 'near_me', 
                 label: 'Global HQ', 
-                value: 'no,76b Adeniyi jones avenue, ikeja, lagos state, nigeria' 
+                value: '76b, Adeniyi jones avenue, Ikeja, Lagos state, Nigeria' 
               },
             ].map((item, index) => (
               <div
@@ -192,10 +192,22 @@ export const Contact: React.FC = () => {
                   required
                 >
                   <option value="" disabled hidden>Select Practice Area</option>
+                  Commercial 
+Civil 
+Criminal 
+Property 
+Wills and probate 
+Others
                   <option value="Corporate Law">Corporate Law</option>
                   <option value="Intellectual Property">Intellectual Property</option>
                   <option value="Dispute Resolution">Dispute Resolution</option>
                   <option value="Taxation">Taxation</option>
+                  <option value="Commercial ">Commercial </option>
+                  <option value="Civil ">Civil </option>
+                  <option value="Criminal ">Criminal </option>
+                  <option value="Property ">Property </option>
+                  <option value="Wills and probate ">Wills and probate </option>
+                  <option value="Others">Others</option>
                 </select>
                 <span className="material-symbols-outlined absolute right-0 bottom-2 pointer-events-none text-gray-400 text-lg">
                   expand_more
