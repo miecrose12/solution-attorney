@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
               {
                 icon: 'alternate_email',
                 label: 'E-Mail',
-                value: 'olowo_tayo@nigerianbar.ng',
+                value: 'Solutionattorneyslawfirm@gmail.com',
               },
               { 
                 icon: 'ring_volume', 
