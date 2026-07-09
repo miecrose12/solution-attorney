@@ -223,7 +223,7 @@ export default function SolutionsAttorney(): JSX.Element {
 
             <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 mt-10 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-32">
               <p className="text-white/80 text-base sm:text-lg md:text-lg lg:text-xl font-light tracking-wide leading-relaxed max-w-lg border-l-2 border-[#5F5323] pl-5 sm:pl-6 md:pl-8">
-                Established on a foundation of excellence and integrity, Solutions attorneysis commited to transforming legal obstacles into strategic advantages. from property rights and media law to complex commercial litigation, our pracice is built on a single, unwavering mandate: delivering talored, effective solutions to every legal problem our client face
+                Established on a foundation of excellence and integrity, Solution Attorneys is committed to providing definitive legal solutions to even the most complex obstacles. Serving a diverse range of legal needs, our practice is built on a single, unwavering mandate: delivering comprehensive and effective representation for every legal challenge our clients face.
               </p>
               <a
                 href="/contact"
