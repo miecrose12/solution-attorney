@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           {/* Branding */}
           <div className="flex-none lg:max-w-xs opacity-0 animate-fade-in-up [animation-delay:0.2s]">
             <h2 className="font-serif text-2xl font-black text-primary mb-4 italic">
-              Solutions attorneys<span className="text-accent-gold"></span>
+              Solutions Attorneys<span className="text-accent-gold"></span>
             </h2>
             <p className="text-sm text-primary text-opacity-60 font-light leading-relaxed">
               Delivering definitive legal outcomes and strategic counsel to corporate and private clients across Nigeria. Lagos, Nigeria.

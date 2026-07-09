@@ -208,7 +208,7 @@ export default function SolutionsAttorney(): JSX.Element {
         
       }}
     >
-      Attorney.
+      Attorneys
     </span>
   </h2>
 
@@ -396,7 +396,7 @@ export default function SolutionsAttorney(): JSX.Element {
                     ></div>
 
                     <p className="text-white/50 font-light text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
-                      The founding intelligence behind every mandate. Structuring governance frameworks and M&amp;A architectures for Pan-African enterprises for over two decades.
+                      A seasoned litigator and a bar man to the core. He leads Solution Attorneys with an unwavering commitment to integrity, professional excellence, and delivering definitive legal outcomes.
                     </p>
                   </div>
 

@@ -49,12 +49,12 @@ export const Contact: React.FC = () => {
           
           {/* Heading */}
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-white italic mb-6 md:mb-8 opacity-0 animate-fade-in-up [animation-delay:0.4s]">
-            Definitive Legal<br /> <span className="text-accent-gold">Solutions</span>
+            Comprehensive Legal<br /> <span className="text-accent-gold">Solutions</span>
           </h1>
           
           {/* Description */}
           <p className="text-white text-opacity-75 text-base md:text-lg mb-8 md:mb-12 font-light opacity-0 animate-fade-in-up [animation-delay:0.5s]">
-            From complex commercial litigation to property and media law, we provide premmium councel at the intersection of strategy and integrity. Our team is ready to redefine your legal experience and deliver the results you need.
+            Navigating every facet of the law, we provide premium legal counsel built on strategy and integrity. Our team is ready to redefine your legal experience and secure the results you demand.
           </p>
 
           {/* Contact Info Cards */}
@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
               { 
                 icon: 'near_me', 
                 label: 'Global HQ', 
-                value: 'Block B floor 2, 76, Adeniyi Jones Avenue, Ikeja, Lagos Opposite Lagoon Hospital(ile Iwosan)' 
+                value: 'Floor 2, 76, Adeniyi Jones Avenue, Ikeja, Lagos Opposite Lagoon Hospital(ile Iwosan), Lagos Nigeria.' 
               },
             ].map((item, index) => (
               <div
