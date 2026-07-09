@@ -89,7 +89,7 @@ export default function SolutionsAttorney(): JSX.Element {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: 'Tayo Olowookere',
+      name: 'Temitayo Olowookere',
       role: 'The principal partner',
       specialty: 'Corporate Governance',
       yearsExp: '15+yrs',
@@ -171,22 +171,35 @@ export default function SolutionsAttorney(): JSX.Element {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
           <div className="max-w-6xl mb-32">
-            <h2 className="font-serif text-6xl sm:text-6xl md:text-7xl lg:text-[8rem] xl:text-[8rem] 2xl:text-[8rem] leading-[0.85] font-black mt-8 text-white italic">
-              Constiutional <br />
-              <span
-                className="text-outline-dark"
-                style={{
-                  WebkitTextStroke: '1px rgba(255, 255, 255, 0.4)',
-                  color: 'transparent',
-                }}
-              >
-                Solutions.
-              </span>
-            </h2>
+          <div className="relative mt-12 select-none">
+  {/* Background subtle accent block (optional, adds depth) */}
+  <div className="absolute -left-4 top-0 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
+
+  <h2 className="font-serif text-6xl sm:text-8xl lg:text-[9rem] xl:text-[11rem] leading-[0.8] font-black italic tracking-tighter text-white">
+    Solution 
+    <span
+      className="block text-outline-dark translate-y-[-10px] sm:translate-y-[-25px] transition-transform duration-300"
+      style={{
+        WebkitTextStroke: '1px rgba(255, 255, 255, 0.35)',
+        
+      }}
+    >
+      Attorney.
+    </span>
+  </h2>
+
+  {/* Tagline nestled into the text offset */}
+  <div className="mt-2 sm:mt-0 pl-1 sm:pl-4 border-l-2 border-white/20 max-w-md">
+    <p className="font-sans text-sm sm:text-base uppercase tracking-[0.2em] text-white/70">
+      Where legal challenges <br className="hidden sm:inline" />
+      meet <span className="text-white font-medium">effective solutions.</span>
+    </p>
+  </div>
+</div>
 
             <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-10 mt-10 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-32">
               <p className="text-white/80 text-base sm:text-lg md:text-lg lg:text-xl font-light tracking-wide leading-relaxed max-w-lg border-l-2 border-[#5F5323] pl-5 sm:pl-6 md:pl-8">
-                Precision-engineered legal strategies for the visionaries redefining the West African commercial landscape.
+                Established on a foundation of excellence and integrity, Solutions attorneysis commited to transforming legal obstacles into strategic advantages. from property rights and media law to complex commercial litigation, our pracice is built on a single, unwavering mandate: delivering talored, effective solutions to every legal problem our client face
               </p>
               <a
                 href="/contact"
