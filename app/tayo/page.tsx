@@ -45,8 +45,11 @@ export default function TayoProfile(): JSX.Element {
               Temitayo Ebenezer Olowookere Esq.
             </h1>
             
-            <p className="text-lg md:text-xl font-light leading-relaxed text-slate-600 max-w-lg">
-              A fiery courtroom advocate and founding Partner of Solution Attorneys. Renowned for tenacity, strategic brilliance, and an unwavering commitment to justice.
+            <p className="text-xs  md:text-base font-light leading-7 text-slate-600 max-w-xl">
+              Temitayo Ebenezer Olowookere is a prominent figure in Nigeria’s legal landscape, bringing over 15 years of multifaceted legal experience to his practice. After earning his LLB (Hons) from the prestigious Obafemi Awolowo University (OAU), he was called to the Nigerian Bar in 2011.
+A fiery courtroom advocate and seasoned litigator, Temitayo has built a formidable reputation across Lagos. He commands vast expertise across a broad spectrum of the law, including Corporate Commercial Law, Criminal Litigation, Property Law, Environmental Law, and Family Law, alongside extensive experience in Employment and Labour disputes, Debt Recovery, Banking and Finance, and Alternative Dispute Resolution (ADR). In January 2019, he established Solution Attorneys with a clear mandate: **transforming legal obstacles into strategic advantages**. This mission is driven by his unwavering commitment to integrity, professional excellence, and a deep passion for the law. His robust practice also encompasses specialized knowledge in media law and intellectual property.
+A bar man to the core, Temitayo’s leadership within the legal community is well-established, having notably served as the Vice Chairman of the Young Lawyers Forum (NBA Ikeja Branch). His dedication ensures robust and strategic representation for a diverse portfolio of corporate and private clients.
+He is presently practicing in Lagos State, where he resides with his wife, Elena Olowookere, a media consultant.
             </p>
             
             <div className="pt-6 flex flex-col sm:flex-row gap-5">

@@ -61,29 +61,53 @@ export default function SolutionsAttorney(): JSX.Element {
 
   const expertiseCards: ExpertiseCard[] = [
     {
-      id: 1,
-      icon: 'account_balance',
-      number: '01',
-      label: 'Legal Design',
-      title: 'Corporate constitutionalization',
-      description: 'Structural governance and elite-tier advisory for Pan-African enterprise ecosystems.',
-    },
-    {
-      id: 2,
-      icon: 'payments',
-      number: '02',
-      label: 'Asset Strategy',
-      title: 'Private Wealth Preservation',
-      description: 'Sophisticated multi-jurisdictional estate strategy for high-net-worth families.',
-    },
-    {
-      id: 3,
-      icon: 'location_city',
-      number: '03',
-      label: 'Urban Growth',
-      title: 'Real Estate Development',
-      description: 'Title perfection and structured financing for the evolving urban landscape of Lagos.',
-    },
+    id: 1,
+    number: "01",
+    label: "Dispute Resolution",
+    title: "Civil & Criminal Litigation",
+    description: "Robust, strategic courtroom advocacy and representation tailored to secure justice and deliver definitive outcomes in complex disputes.",
+    icon: "gavel"
+  },
+  {
+    id: 2,
+    number: "02",
+    label: "Business Strategy",
+    title: "Corporate & Commercial Law",
+    description: "Comprehensive legal frameworks, structural governance, and innovative advisory services designed to protect and propel business entities.",
+    icon: "corporate_fare"
+  },
+  {
+    id: 3,
+    number: "03",
+    label: "Asset Protection",
+    title: "Property & Real Estate Law",
+    description: "Meticulous oversight of real estate transactions, property rights protection, and strategic legal counsel for property investments.",
+    icon: "real_estate_agent"
+  },
+  {
+    id: 4,
+    number: "04",
+    label: "Innovation & Creativity",
+    title: "Media Law & Intellectual Property",
+    description: "Safeguarding creative content, navigating copyright frameworks, and protecting the intellectual assets of creators and media enterprises.",
+    icon: "gavel"
+  },
+  {
+    id: 5,
+    number: "05",
+    label: "Financial Recovery",
+    title: "Debt Recovery & Banking",
+    description: "Aggressive and legally sound strategies for asset tracing, debt recovery, and resolving complex banking and finance disputes.",
+    icon: "payments"
+  },
+  {
+    id: 6,
+    number: "06",
+    label: "Private Client Services",
+    title: "Family & Environmental Law",
+    description: "Compassionate yet firm legal counsel navigating delicate family matters, alongside dedicated advocacy in environmental regulatory compliance.",
+    icon: "diversity_3"
+  }
   ];
 
   const teamMembers: TeamMember[] = [
@@ -286,7 +310,7 @@ export default function SolutionsAttorney(): JSX.Element {
               </div>
               <div className="lg:max-w-xs">
                 <p className="text-[#1A305E]/55 font-light text-sm sm:text-base md:text-lg leading-relaxed border-l-2 border-[#5F5323]/40 pl-4">
-                  Six seasoned minds united by one mandate — to construct advantage for our clients at every tier of the commercial landscape.
+                  A formidable team of litigators and legal strategists driven by integrity, professional excellence, and a passion for delivering definitive solutions.
                 </p>
               </div>
             </div>
@@ -596,8 +620,8 @@ export default function SolutionsAttorney(): JSX.Element {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white font-black mb-6 sm:mb-8 md:mb-12 leading-tight px-2 italic">
-            In the constitution of law, <br />
-            <span className="text-[#5F5323]">clarity</span> is the cornerstone.
+            "Where others see legal obstacles  <br />
+            <span className="text-[#5F5323]">We</span> deliver strategic solutions"
           </h2>
           <div className="w-12 sm:w-16 md:w-20 h-px bg-[#5F5323] mx-auto mb-6 sm:mb-8 md:mb-12"></div>
           <p className="text-white/40 font-light text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.4em] sm:tracking-[0.5em]">
@@ -617,7 +641,7 @@ export default function SolutionsAttorney(): JSX.Element {
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-start">
               <p className="text-[#1A305E]/60 text-sm sm:text-base md:text-lg lg:text-xl font-light mb-6 sm:mb-8 md:mb-12 leading-relaxed">
-                Our collective of legal solutionists is ready to design your next commercial milestone with surgical precision.
+                Our team of seasoned advocates and strategic legal minds is ready to tackle your most complex challenges and deliver definitive results with surgical precision.
               </p>
               <a
                 href="/services"

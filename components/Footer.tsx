@@ -30,10 +30,10 @@ export const Footer: React.FC = () => {
           {/* Branding */}
           <div className="flex-none lg:max-w-xs opacity-0 animate-fade-in-up [animation-delay:0.2s]">
             <h2 className="font-serif text-2xl font-black text-primary mb-4 italic">
-              Solutions<span className="text-accent-gold">.</span>
+              Solutions attorneys<span className="text-accent-gold"></span>
             </h2>
             <p className="text-sm text-primary text-opacity-60 font-light leading-relaxed">
-              Engineering legal outcomes for the next generation of African industry leaders. Victoria Island, Lagos.
+              Delivering definitive legal outcomes and strategic counsel to corporate and private clients across Nigeria. Lagos, Nigeria.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="pt-6 border-t border-primary border-opacity-5 flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between items-center opacity-0 animate-fade-in-up [animation-delay:0.6s]">
           <p className="text-xs uppercase tracking-widest text-primary text-opacity-30 text-center lg:text-left">
-            © 2026 Solutions Attorney — Radical Precision Architecture
+            © 2026 Solutions Attorney — Integrity. Excellence. Solution
           </p>
           <div className="flex gap-6">
             {['public', 'data_exploration', 'architecture'].map((icon) => (
