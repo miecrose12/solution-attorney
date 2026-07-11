@@ -26,8 +26,8 @@ export const Navbar: React.FC = () => {
   const navigationItems = [
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
-    { label: 'services', href: '/services' },
-    { label: 'Process', href: '/process' },
+    { label: 'Services', href: '/services' },
+    // { label: 'Process', href: '/process' },
     // { label: 'Insights', href: '/insights' },
     
   ];
@@ -183,7 +183,7 @@ export const Navbar: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="block w-full py-3 px-6 text-center font-serif text-sm font-bold italic text-white bg-[#5F5323] rounded-lg hover:bg-[#5F5323]/90 transition-all duration-300 transform hover:scale-105 no-underline"
               >
-                Begin Consultancy
+                Contact Us
               </Link>
             </div>
           </nav>

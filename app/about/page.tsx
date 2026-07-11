@@ -1,43 +1,8 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
-
-interface TimelineItem {
-  year: string;
-  title: string;
-  description: string;
-}
+import React from 'react';
 
 export default function About(): JSX.Element {
-  const timelineRef = useRef<HTMLElement>(null);
-
-  const timelineItems: TimelineItem[] = [
-    {
-      year: '2018',
-      title: 'Foundation & Vision',
-      description:
-        'Solutions was established with a singular vision: to be design precision-engineered legal solutions for Africa\'s most ambitious enterprises.',
-    },
-    {
-      year: '2020',
-      title: 'Pan-African Expansion',
-      description:
-        'Expanded operations across West Africa, establishing ourselves as trusted advisors to multinational corporations and high-net-worth families.',
-    },
-    {
-      year: '2022',
-      title: 'Global Recognition',
-      description:
-        'Recognized as leading legal Solutionists in corporate structuring and wealth preservation, with offices in London and Durban.',
-    },
-    {
-      year: '2024',
-      title: 'Innovation & Thought Leadership',
-      description:
-        'Pioneered AI-integrated legal solutions and published landmark research on African commercial law evolution.',
-    },
-  ];
-
   return (
     <>
       <style jsx global>{`
@@ -92,6 +57,7 @@ export default function About(): JSX.Element {
           border: 1px solid rgba(26, 48, 94, 0.1);
           border-radius: 0.5rem;
           transition: var(--transition-smooth);
+          height: 100%;
         }
 
         .glass-card:hover {
@@ -101,7 +67,7 @@ export default function About(): JSX.Element {
         }
       `}</style>
 
-      {/* ABOUT HERO - WITH PROPER NAVBAR SPACING */}
+      {/* ABOUT HERO - OUR STORY */}
       <section className="hero hero--about" style={{
         background: 'linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%)',
         minHeight: '70vh',
@@ -131,7 +97,7 @@ export default function About(): JSX.Element {
               letterSpacing: '0.5em',
               textTransform: 'uppercase',
               display: 'block',
-                marginTop: '55px',
+              marginTop: '55px',
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.3s forwards'
             }}>Our Story</span>
@@ -147,7 +113,7 @@ export default function About(): JSX.Element {
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.4s forwards'
             }}>
-              constitutes of <br /> <span style={{ color: 'var(--color-accent-gold)' }}>Legal Excellence</span>
+              Pioneers of <br /> <span style={{ color: 'var(--color-accent-gold)' }}>Effective Legal Solutions</span>
             </h1>
             
             <p className="hero__description hero__description--about" style={{
@@ -162,7 +128,7 @@ export default function About(): JSX.Element {
               animation: 'fadeInUp 0.8s ease-out 0.5s forwards',
               maxWidth: '55rem'
             }}>
-              Since 2018, Solutions has been at the forefront of legal innovation in Africa, crafting bespoke solutions for the continent's most ambitious enterprises and forward-thinking leaders.
+              Since 2018, Solution Attorneys has been at the forefront of legal innovation in Africa, crafting bespoke solutions for the continent's most ambitious enterprises and forward-thinking leaders.
             </p>
           </div>
         </div>
@@ -211,7 +177,7 @@ export default function About(): JSX.Element {
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* PHILOSOPHY SECTION */}
       <section className="expertise" style={{ 
         marginTop: '0',
         position: 'relative',
@@ -246,17 +212,25 @@ export default function About(): JSX.Element {
           }}>
             {[
               {
-                title: 'Precision',
-                description: 'Every detail matters. We engineer solutions with surgical accuracy, leaving nothing to chance.',
+                title: 'Proffering Solutions',
+                description: 'We do not just navigate legal complexities; we actively engineer and proffer clear, actionable solutions designed to turn your legal obstacles into strategic advantages.',
               },
               {
-                title: 'Innovation',
-                description: 'We don\'t follow trends—we set them. Leveraging technology and creative thinking for breakthrough results.',
+                title: 'Excellence',
+                description: 'We hold ourselves to the highest possible standards, delivering premium, precision-led counsel in every single engagement.',
               },
               {
                 title: 'Integrity',
-                description: 'Trust is earned through consistent, transparent, and principled practice. It\'s our foundation.',
+                description: 'Trust is our absolute foundation. We operate with uncompromising transparency, honesty, and principled legal practice.',
               },
+              {
+                title: 'Passion',
+                description: 'We are deeply invested in our clients\' success, bringing relentless energy, dedication, and focus to every challenge we take on.',
+              },
+              {
+                title: 'Unwavering Commitment',
+                description: 'We stand by you from start to finish. We are driven by a relentless dedication to see every single matter through to a logical and successful conclusion.',
+              }
             ].map((item, index) => (
               <div
                 key={index}
@@ -290,116 +264,7 @@ export default function About(): JSX.Element {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section
-        id="timeline-section"
-        ref={timelineRef}
-        className="timeline"
-        style={{
-          padding: 'var(--spacing-3xl) 0',
-          position: 'relative'
-        }}
-      >
-        <div className="container" style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '0 2rem',
-          width: '100%'
-        }}>
-          <div className="timeline__header" style={{
-            textAlign: 'center',
-            marginBottom: 'var(--spacing-3xl)',
-            opacity: 0,
-            animation: 'fadeIn 0.8s ease-out forwards'
-          }}>
-            <h2 className="timeline__title" style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.5rem, 6vw, 4rem)',
-              fontWeight: 'var(--fw-black)',
-              color: 'var(--color-primary)',
-              marginBottom: 'var(--spacing-lg)',
-              fontStyle: 'italic'
-            }}>Our Journey</h2>
-          </div>
-
-          <div className="timeline__line" style={{
-            position: 'absolute',
-            left: '50%',
-            top: 0,
-            width: '1px',
-            height: '100%',
-            background: 'linear-gradient(180deg, transparent, var(--color-accent-gold), transparent)',
-            transform: 'translateX(-50%)',
-            pointerEvents: 'none'
-          }}></div>
-
-          <div className="timeline__content" style={{
-            position: 'relative',
-            maxWidth: '800px',
-            margin: '0 auto'
-          }}>
-            {timelineItems.map((item, index) => (
-              <div key={index} className="timeline__item" style={{
-                marginBottom: 'var(--spacing-3xl)',
-                opacity: 0,
-                animation: `fadeInUp 0.8s ease-out ${0.2 + index * 0.1}s forwards`,
-                position: 'relative'
-              }}>
-                <div style={{
-                  content: '""',
-                  position: 'absolute',
-                  left: '50%',
-                  top: '20px',
-                  width: '16px',
-                  height: '16px',
-                  background: 'var(--color-accent-gold)',
-                  border: '3px solid var(--color-white)',
-                  borderRadius: '50%',
-                  transform: 'translateX(-50%)',
-                  transition: 'var(--transition-base)',
-                  zIndex: 10
-                }}></div>
-                
-                <div className="timeline__item-content" style={{
-                  padding: 'var(--spacing-2xl)',
-                  background: 'rgba(26, 48, 94, 0.03)',
-                  border: '1px solid rgba(26, 48, 94, 0.1)',
-                  borderRadius: '0.5rem',
-                  marginLeft: index % 2 === 0 ? 0 : '50%',
-                  marginRight: index % 2 === 0 ? '50%' : 0,
-                  transition: 'var(--transition-smooth)'
-                }}>
-                  <div className="timeline__year" style={{
-                    fontFamily: 'var(--font-serif)',
-                    fontSize: '1.5rem',
-                    fontWeight: 'var(--fw-black)',
-                    color: 'var(--color-accent-gold)',
-                    marginBottom: 'var(--spacing-sm)',
-                    fontStyle: 'italic'
-                  }}>{item.year}</div>
-                  <h3 style={{ 
-                    fontFamily: 'var(--font-serif)', 
-                    fontSize: '1.2rem', 
-                    fontWeight: 'var(--fw-bold)', 
-                    marginBottom: '0.5rem', 
-                    color: 'var(--color-primary)' 
-                  }}>
-                    {item.title}
-                  </h3>
-                  <p className="timeline__text" style={{
-                    color: 'var(--color-primary)',
-                    opacity: 0.7,
-                    fontWeight: 'var(--fw-light)',
-                    lineHeight: 1.8
-                  }}>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Values */}
+      {/* CLOSING MANIFESTO - ADAPTED TO THE WRITE-UP */}
       <section className="manifesto" style={{
         position: 'relative',
         padding: 'var(--spacing-3xl) 0',
@@ -451,8 +316,8 @@ export default function About(): JSX.Element {
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.2s forwards'
             }}>
-              "We don't build walls—<br />
-              <span style={{ color: 'var(--color-accent-gold)' }}>we scale bridges</span> between vision and reality."
+              Turning your legal obstacles <br />
+              into <span style={{ color: 'var(--color-accent-gold)' }}>strategic advantages.</span>
             </h2>
             <div className="manifesto__divider" style={{
               width: '5rem',
@@ -470,12 +335,12 @@ export default function About(): JSX.Element {
               letterSpacing: '0.5em',
               opacity: 0,
               animation: 'fadeInUp 0.8s ease-out 0.6s forwards'
-            }}>Our Commitment</p>
+            }}>Our Promise</p>
           </div>
         </div>
       </section>
 
-      {/* Comprehensive Mobile Responsive Styles */}
+      {/* COMPREHENSIVE MOBILE RESPONSIVE STYLES (Cleaned of Timeline CSS) */}
       <style jsx>{`
         /* Large Desktop (1440px+) */
         @media (min-width: 1440px) {
@@ -538,21 +403,8 @@ export default function About(): JSX.Element {
             max-width: 100% !important;
           }
 
-          .expertise, .timeline, .manifesto {
+          .expertise, .manifesto {
             padding: var(--spacing-2xl) 0 !important;
-          }
-
-          .timeline__line {
-            left: 30px !important;
-          }
-
-          .timeline__item > div:first-child {
-            left: 30px !important;
-          }
-
-          .timeline__item-content {
-            margin-left: 70px !important;
-            margin-right: 0 !important;
           }
 
           .container {
@@ -583,33 +435,12 @@ export default function About(): JSX.Element {
             font-size: 1rem !important;
           }
 
-          .expertise__title,
-          .timeline__title {
+          .expertise__title {
             font-size: clamp(2rem, 8vw, 2.5rem) !important;
           }
 
           .glass-card {
             padding: 1.5rem !important;
-          }
-
-          .timeline__line {
-            left: 24px !important;
-          }
-
-          .timeline__item > div:first-child {
-            left: 24px !important;
-            width: 14px !important;
-            height: 14px !important;
-            top: 16px !important;
-          }
-
-          .timeline__item-content {
-            margin-left: 60px !important;
-            padding: var(--spacing-lg) !important;
-          }
-
-          .timeline__year {
-            font-size: 1.25rem !important;
           }
 
           .manifesto__quote {
@@ -639,25 +470,16 @@ export default function About(): JSX.Element {
             padding-left: var(--spacing-sm) !important;
           }
 
-          .expertise, .timeline, .manifesto {
+          .expertise, .manifesto {
             padding: var(--spacing-xl) 0 !important;
           }
 
-          .expertise__header,
-          .timeline__header {
+          .expertise__header {
             margin-bottom: 2rem !important;
           }
 
           .glass-card {
             padding: 1.25rem !important;
-          }
-
-          .timeline__item {
-            margin-bottom: var(--spacing-2xl) !important;
-          }
-
-          .timeline__item-content {
-            padding: var(--spacing-md) !important;
           }
 
           .manifesto {
@@ -693,32 +515,6 @@ export default function About(): JSX.Element {
             padding-left: 0.75rem !important;
           }
 
-          .timeline__line {
-            left: 16px !important;
-          }
-
-          .timeline__item > div:first-child {
-            left: 16px !important;
-            width: 12px !important;
-            height: 12px !important;
-            border-width: 2px !important;
-            top: 12px !important;
-          }
-
-          .timeline__item-content {
-            margin-left: 44px !important;
-            padding: 1rem !important;
-          }
-
-          .timeline__year {
-            font-size: 1.1rem !important;
-            margin-bottom: 0.5rem !important;
-          }
-
-          .timeline__item-content h3 {
-            font-size: 1rem !important;
-          }
-
           .manifesto__attribution {
             font-size: 0.75rem !important;
             letter-spacing: 0.3em !important;
@@ -741,11 +537,6 @@ export default function About(): JSX.Element {
 
           .container {
             padding: 0 0.75rem !important;
-          }
-
-          .timeline__item-content {
-            margin-left: 36px !important;
-            padding: 0.75rem !important;
           }
 
           .glass-card {

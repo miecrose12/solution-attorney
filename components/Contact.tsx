@@ -34,9 +34,10 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col lg:flex-row">
-      {/* Left Side - Contact Info */}
-      <div className="flex-1 bg-gradient-to-br from-primary-dark to-primary flex items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 relative overflow-hidden mt-24">
+    /* Changed flex-col to flex-col-reverse so the form comes first on mobile */
+    <section className="min-h-screen flex flex-col-reverse lg:flex-row">
+      {/* Contact Info (Shows below the form on mobile, on the left side on desktop) */}
+      <div className="flex-1 bg-gradient-to-br from-primary-dark to-primary flex items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 relative overflow-hidden lg:mt-24">
         {/* Decorative circles - Hidden on mobile for cleaner look */}
         <div className="absolute -top-32 right-0 w-64 h-64 md:w-96 md:h-96 border border-accent-gold border-opacity-10 rounded-full translate-x-1/2"></div>
         <div className="absolute -bottom-32 left-0 w-64 h-64 md:w-96 md:h-96 border border-accent-gold border-opacity-10 rounded-full -translate-x-1/2"></div>
@@ -99,8 +100,8 @@ export const Contact: React.FC = () => {
         </div>
       </div>
 
-      {/* Right Side - Contact Form */}
-      <div className="flex-1 flex items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 bg-white">
+      {/* Contact Form (Shows first on mobile, on the right side on desktop) */}
+      <div className="flex-1 flex items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 bg-white pt-24 lg:pt-16">
         <form
           onSubmit={handleSubmit}
           id="contact-form"
@@ -192,12 +193,6 @@ export const Contact: React.FC = () => {
                   required
                 >
                   <option value="" disabled hidden>Select Practice Area</option>
-                  Commercial 
-Civil 
-Criminal 
-Property 
-Wills and probate 
-Others
                   <option value="Corporate Law">Corporate Law</option>
                   <option value="Intellectual Property">Intellectual Property</option>
                   <option value="Dispute Resolution">Dispute Resolution</option>

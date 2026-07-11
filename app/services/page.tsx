@@ -236,7 +236,7 @@ export default function ServicesPage() {
               Our <span className="text-[#5f5323]">Services</span>
             </h1>
             <p className="text-[#1a305e] text-[clamp(0.875rem,2.5vw,1.125rem)] font-light leading-[1.8] border-l-4 border-[#5f5323] pl-[clamp(0.5rem,2vw,1rem)] max-w-[55rem]">
-              Comprehensive legal solutions designed to address the complex challenges of modern enterprise and personal affairs. From corporate structuring to digital asset compliance, we have the expertise to protect what matters most.
+              Your trusted partners in law, dedicated to both your business success and personal peace of mind. We handle the complexities of your legal needs with care and expertise, so you can focus on what matters most to you."
             </p>
           </div>
         </div>
@@ -246,7 +246,7 @@ export default function ServicesPage() {
       <section className="py-[clamp(2.5rem,6vw,5rem)] px-[clamp(1rem,3vw,2rem)] bg-white relative">
         <div className="max-w-[1280px] mx-auto w-full">
           <div className="mb-[clamp(2.5rem,6vw,5rem)] text-center">
-            <span className="text-[#5f5323] text-[clamp(0.625rem,1.5vw,0.7rem)] font-black tracking-[0.4em] uppercase block mb-[clamp(0.5rem,2vw,1rem)]">
+            <span className="text-[#5f5323] text-[clamp(1.325rem,2.5vw,1rem)] font-black tracking-[0.4em] uppercase block mb-[clamp(0.5rem,2vw,1rem)]">
               What We Offer
             </span>
             <h2 className="font-['Playfair_Display'] text-[clamp(1.75rem,5vw,3.5rem)] font-black text-[#1a305e] italic">
