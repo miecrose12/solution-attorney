@@ -164,7 +164,7 @@ export default function SolutionsAttorney(): JSX.Element {
     {
       id: 6,
       name: 'Hamidat Suleiman Sarumi',
-      role: 'Junior Associate',
+      role: 'Graduate trainee',
       specialty: 'Common and Islamic Law',
       yearsExp: '1yr',
       imageUrl: hamidatImg,
